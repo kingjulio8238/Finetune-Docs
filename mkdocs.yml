@@ -1,0 +1,98 @@
+site_name: Finetune Documentation
+theme:
+  name: material
+  logo: assets/finetune-logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: indigo
+      accent: red
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: indigo
+      accent: red
+  extra_css:
+      - assets/custom.css
+
+repo_url: https://github.com/yourusername/Finetune-Docs
+repo_name: Finetune-Docs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/Finetune-Docs
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/yourusername/Finetune-Docs" target="_blank" rel="noopener">Finetune</a>
+
+nav:
+  - Home: index.md
+  - Core Concepts:
+    - Agents: core-concepts/agents.md
+    - Tasks: core-concepts/tasks.md
+    - Tools: core-concepts/tools.md
+    - Processes: core-concepts/processes.md
+    - Crews: core-concepts/crews.md
+    - Training: core-concepts/training.md
+    - Memory: core-concepts/memory.md
+    - Planning: core-concepts/planning.md
+  - How-To Guides:
+    - Starting Your Finetune Project: how-to/starting-your-project.md
+    - Installing Finetune: how-to/installing.md
+    - Getting Started: how-to/getting-started.md
+    - Create Custom Tools: how-to/create-custom-tools.md
+    - Using Sequential Process: how-to/using-sequential-process.md
+    - Using Hierarchical Process: how-to/using-hierarchical-process.md
+    - Connecting to LLMs: how-to/connecting-to-llms.md
+    - Customizing Agents: how-to/customizing-agents.md
+    - Coding Agents: how-to/coding-agents.md
+    - Forcing Tool Output as Result: how-to/forcing-tool-output.md
+    - Human Input on Execution: how-to/human-input-execution.md
+    - Kickoff a Crew Asynchronously: how-to/kickoff-crew-async.md
+    - Kickoff a Crew for a List: how-to/kickoff-crew-list.md
+    - Replay from a Task: how-to/replay-from-task.md
+    - Conditional Tasks: how-to/conditional-tasks.md
+    - Agent Monitoring with AgentOps: how-to/agent-monitoring-agentops.md
+    - Agent Monitoring with LangTrace: how-to/agent-monitoring-langtrace.md
+  - Examples:
+    - Prepare for Meetings: examples/prepare-for-meetings.md
+    - Trip Planner Crew: examples/trip-planner-crew.md
+    - Create Instagram Post: examples/create-instagram-post.md
+    - Stock Analysis: examples/stock-analysis.md
+    - Game Generator: examples/game-generator.md
+    - Drafting Emails with LangGraph: examples/drafting-emails-langgraph.md
+    - Landing Page Generator: examples/landing-page-generator.md
