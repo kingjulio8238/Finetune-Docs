@@ -1,5 +1,16 @@
 /* Custom CSS for Finetune Docs */
 
+body, .md-header, .md-main, .md-footer {
+    min-width: 1024px; /* Adjust this value as needed */
+}
+
+.md-header__inner, .md-main__inner, .md-footer__inner {
+    max-width: 100%; /* Changed from 1440px to 100% */
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 :root {
     --md-primary-fg-color: #000000;
     --md-primary-fg-color--light: #000000;
@@ -7,16 +18,11 @@
     --md-accent-fg-color: #1969e1; /* Darker blue for links */
 }
 
-/* Main content area /
-/ .md-maininner {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
-} */
-.md-maininner {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
+/* Main content area */
+.md-main__inner {
+    max-width: 100%; /* Changed from 1440px to 100% */
+    margin: 0;
+    padding: 0; /* Removed horizontal padding */
 }
 
 /* Header */
@@ -26,7 +32,7 @@
 }
 
 .md-header__inner {
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0;
 }
 
 /* Navigation toggle */
@@ -45,6 +51,8 @@
     font-weight: normal;
     font-size: 2.2em;
     margin-bottom: 1rem;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .md-typeset h2 {
@@ -53,6 +61,8 @@
     font-weight: normal;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* Grid layout for core concepts, guides, and examples */
@@ -75,7 +85,8 @@
 }
 
 .grid-item ul {
-    padding-right: 0rem;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 0;
 }
 
@@ -120,29 +131,50 @@
 .header-message {
     color: #ffffff;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.8em;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
     margin-right: 1rem;
     display: flex;
     align-items: center;
 }
 
+/* .header-message span {
+    margin-left: 0.3em; 
+} */
+
 .header-message a {
-    color: #ffd700; /* Gold color to make it pop */
-    text-decoration: none;
+    color: var(--md-accent-fg-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-left: 0.3em;
 }
 
 .header-message a:hover {
     text-decoration: underline;
 }
 
-/* Remove left sidebar */
+/* Hide left sidebar by default */
 .md-sidebar--primary {
-    display: none;
+    position: fixed;
+    left: -15rem;
+    transition: left 0.3s ease-in-out;
 }
 
-/* Adjust main content when primary sidebar is hidden */
+/* Show left sidebar when nav-toggle is checked */
+[data-md-toggle="drawer"]:checked ~ .md-sidebar--primary {
+    left: 0;
+}
+
+/* Adjust main content when sidebar is hidden */
 .md-content {
     margin-left: 0;
+    padding-left: 0;
+}
+
+/* Adjust content when sidebar is visible */
+[data-md-toggle="drawer"]:checked ~ .md-main .md-content {
+    margin-left: 15rem;
 }
 
 /* Remove bottom navigation */
@@ -151,9 +183,31 @@
 }
 
 /* Navigation */
-.md-navitem .md-navlink--active {
-    color: var(--md-accent-fg-color);
+.md-nav {
+    font-size: 14px;
+}
+
+.md-nav__title {
     font-weight: bold;
+    color: #333;
+}
+
+.md-nav__item {
+    padding: 2px 0;
+}
+
+.md-nav__link {
+    color: #666;
+}
+
+.md-nav__link:hover,
+.md-nav__link--active {
+    color: var(--md-accent-fg-color);
+}
+
+/* Remove "Home" text from navigation */
+.md-nav__title:first-child {
+    display: none;
 }
 
 /* Code blocks */
@@ -176,7 +230,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0 1rem;
+    padding: 0 1rem; /* Kept horizontal padding for footer content */
+    max-width: 100%; /* Changed from 1440px to 100% */
+    margin: 0;
 }
 
 .md-footer-copyright {
@@ -204,3 +260,24 @@
 .md-tabs {
     display: none;
 }
+
+/* Responsive adjustments */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        left: -15rem;
+    }
+    
+    .md-content {
+        margin-left: 0;
+    }
+    
+    [data-md-toggle="drawer"]:checked ~ .md-sidebar--primary {
+        left: 0;
+    }
+    
+    [data-md-toggle="drawer"]:checked ~ .md-main .md-content {
+        margin-left: 15rem;
+    }
+}
+
+/* Removed the media query for screens wider than 1440px */
