@@ -131,7 +131,7 @@ body, .md-header, .md-main, .md-footer {
 .header-message {
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2em;
     letter-spacing: 0.5px;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
@@ -144,7 +144,7 @@ body, .md-header, .md-main, .md-footer {
 } */
 
 .header-message a {
-    color: var(--md-accent-fg-color);
+    color: #8fbafb;
     font-weight: bold;
     transition: color 0.3s ease;
     margin-left: 0.3em;

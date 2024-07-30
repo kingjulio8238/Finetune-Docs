@@ -292,20 +292,14 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Feedback session">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deploy-to-your-private-cloud" class="md-nav__link">
     <span class="md-ellipsis">
       Deploy to your private cloud
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1468,20 +1462,20 @@
   <h1>Finetune Core Services</h1>
 
 <p style="font-size: 22px;">
-Finetune creates the easiest way to fine-tune AI agents. Our platform is simple allowing developers to enter a fine-tuning session, feedback session and deploy their weighted execution graph (more on this later) to their private cloud.
+Finetune creates the easiest way to fine-tune AI agents. Our simple platform allows developers to enter a fine-tuning or feedback session and deploy their weighted execution graph to their private cloud.
 </p>
 
 <h2 id="fine-tuning-session">Fine-tuning session</h2>
 <p style="font-size: 22px;">
-Create synthetic users that reflect your customers, run your agent against these users, receive detailed session reports and a weighted execution graph available. After each run, Finetune will judge the execution and add relevant weights depending on the outcome and store them in the graph.
+Create synthetic users that reflect your customers, run your agent against these users, and receive detailed session reports and a weighted execution graph. After each run, Finetune evaluates the execution, adds relevant weights depending on the outcome, and stores them in the graph.
 </p>
 
 <h2 id="feedback-session">Feedback session</h2>
 <p style="font-size: 22px;">
-Enter a feedback session where our in-house agent will be able to identify which executions received a low/bad weight during the fine-tuning session and present these to you for feedback. Finetune uses your feedback to update the weighted execution graph.
+Enter a feedback session where our in-house agent can identify which executions received a negative weight during the fine-tuning session and present these to you for feedback. Finetune uses your feedback to update the weighted execution graph.
 </p>
 
-<h3 id="deploy-to-your-private-cloud">Deploy to your private cloud</h3>
+<h2 id="deploy-to-your-private-cloud">Deploy to your private cloud</h2>
 <p style="font-size: 22px;">
 Easily deploy your weighted execution graph to a private cloud with root access to perform updates while running your agents in production. Each time your agent runs, its first step is to reference its weighted execution graph to retrieve similar executions with positive weights as context for your agent's LLM to generate accurate subsequent action lists.
 </p>

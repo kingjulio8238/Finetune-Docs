@@ -1462,12 +1462,16 @@
   <h1>Weighted Execution Graph</h1>
 
 <p style="font-size: 22px;">
-The core value Finetune provides developers is access to a Weighted Execution Graph (WEG) that stores the task lists of your agents' past executions, the weights added by our LLM judge, and the human feedback provided in the feedback session. We provide an easy way for you to deploy your latest WEG to a private cloud where your graph's data is <strong>private and secure to you, and only you.</strong>
+The core value Finetune provides developers is access to a Weighted Execution Graph (WEG) that stores the task lists of your agents' past executions, the weights added by our evaluations, and the human feedback provided in the feedback session. 
+</p>
+
+<p style="font-size: 22px;">
+We provide an easy way for you to deploy your latest WEG to a private cloud where your graph's data is <strong>private and secure to you and only you. </strong>
 </p>
 
 <h2 id="updates-after-fine-tuning">Updates after fine-tuning</h2>
 <p style="font-size: 22px;">
-After each execution we add the task list and the weights to your graph. A weight of 1 and -1 will be given for successful and failed executions respectively. At this stage, each execution has the following structure: 
+After each execution, we add the task list and the weights to your graph. We will add a weight of 1 for successful executions and -1 for failed executions. At this stage, each execution has the following structure: 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;Task List&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">&quot;search&quot;</span><span class="p">,</span>
@@ -1482,7 +1486,7 @@ After each execution we add the task list and the weights to your graph. A weigh
 
 <h2 id="feedback-session">Feedback session</h2>
 <p style="font-size: 22px;">
-After the feedback session, we convert your feedback into notes and update each execution by adding these notes. After the note is added, the weight will be changed to 0 to indicate that human feedback has been added. At this stage, each execution has the following structure: 
+After the feedback session, we convert your feedback into notes and update each execution by adding these notes. After adding the note, we will change the weight to 0, indicating that human feedback exists (useful when performing Graph RAG). At this stage, each execution has the following structure: 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;Task List&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="s2">&quot;generate&quot;</span><span class="p">,</span>
@@ -1498,9 +1502,9 @@ After the feedback session, we convert your feedback into notes and update each 
 
 <h2 id="root-access">Root access</h2>
 <p style="font-size: 22px;">
-When you run your agent in production, it will first perform Graph RAG over your execution to retrieve relevant context. This context will be passed to your agent's core LLM to create the next task list. 
+When you run your agent in production, it will first perform Graph RAG over your execution to retrieve relevant context for your agent's core LLM to create the following task list. 
 
-You will have root access to perform any CRUD operations over your graph meaning you can add to your graph by running a fine-tuning session or add suggestions during a feedback session <strong>at any time.</strong>
+You will have <strong> root access </strong> to perform any CRUD operations over your graph, meaning you can add to your graph by running a fine-tuning session or add suggestions during a feedback session <strong>at any time.</strong>
 </p>
 
 

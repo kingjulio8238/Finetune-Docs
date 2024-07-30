@@ -75,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#aligning-to-your-core-values" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -412,17 +407,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Finetune's Agent
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -432,32 +416,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#aligning-to-your-core-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Aligning to your core values
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1444,14 +1402,9 @@
   <h1>Finetune's Agent</h1>
 
 <p style="font-size: 22px;">
-After running a fine-tuning session, you'll have 2 options: enter a feedback session or deploy your execution graph. We will be focusing on the prior here. 
+After running a fine-tuning session, you'll have two options: enter a feedback session or deploy your execution graph. We will focus on the former here. 
 
-Finetune has developed an in-house multi-agent system capable of identifying which executions received a negative weight during the fine-tuning session. Enter a feedback session and our agent will propose these bad executions that failed to meet the synthetic user's with necessary context and easily respond back with your feedback. 
-</p>
-
-<h2 id="aligning-to-your-core-values">Aligning to your core values</h2>
-<p style="font-size: 22px;">
-We use this human feedback to update your execution graph with additional context - think community notes. This allows your agent's core LLM to align to your core values and ways of operating. This RL feedback powers the accuracy of subsequent generated task lists.  
+Finetune has developed an in-house multi-agent system to identify which executions received a negative weight during the fine-tuning session. When you enter a feedback session, our agent will propose these executions with the necessary context. All you have to do is respond with your feedback. 
 </p>
 
 
