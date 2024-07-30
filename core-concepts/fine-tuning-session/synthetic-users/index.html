@@ -13,25 +13,25 @@
       
       
       
-        <link rel="prev" href="../create-instagram-post/">
+        <link rel="prev" href="../../finetune-core-services/">
       
       
-        <link rel="next" href="../game-generator/">
+        <link rel="next" href="../running-agent-against-users/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
     
     
       
-        <title>Stock Analysis - Finetune</title>
+        <title>Synthetic Users - Finetune</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/custom.css">
+      <link rel="stylesheet" href="../../../assets/custom.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,6 +74,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#minimal-setup" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -136,7 +141,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Finetune" class="md-nav__button md-logo" aria-label="Finetune" data-md-component="logo">
+    <a href="../../.." title="Finetune" class="md-nav__button md-logo" aria-label="Finetune" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -166,7 +171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -183,8 +188,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -194,13 +201,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -214,7 +219,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Core Concepts
@@ -228,7 +233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/finetune-core-services/" class="md-nav__link">
+      <a href="../../finetune-core-services/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -246,6 +251,8 @@
                 
   
   
+    
+  
   
   
     
@@ -254,13 +261,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -274,7 +279,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Fine-tuning Session
@@ -285,10 +290,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../core-concepts/fine-tuning-session/synthetic-users/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Synthetic Users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -297,6 +320,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users' structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -309,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/fine-tuning-session/running-agent-against-users/" class="md-nav__link">
+      <a href="../running-agent-against-users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -330,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/fine-tuning-session/added-weights/" class="md-nav__link">
+      <a href="../added-weights/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -398,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/feedback-session/finetunes-agent/" class="md-nav__link">
+      <a href="../../feedback-session/finetunes-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -419,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/feedback-session/human-feedback/" class="md-nav__link">
+      <a href="../../feedback-session/human-feedback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/weighted-execution-graph/" class="md-nav__link">
+      <a href="../../weighted-execution-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/virtual-private-cloud-deployment/" class="md-nav__link">
+      <a href="../../virtual-private-cloud-deployment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/integrate-your-agent/" class="md-nav__link">
+      <a href="../../../how-to/integrate-your-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -599,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/fine-tuning-session/create-view-verify-synthetic-users/" class="md-nav__link">
+      <a href="../../../how-to/fine-tuning-session/create-view-verify-synthetic-users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/fine-tuning-session/view-weights-added/" class="md-nav__link">
+      <a href="../../../how-to/fine-tuning-session/view-weights-added/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/fine-tuning-session/view-fine-tuning-report/" class="md-nav__link">
+      <a href="../../../how-to/fine-tuning-session/view-fine-tuning-report/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -709,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/feedback-session/view-human-feedback/" class="md-nav__link">
+      <a href="../../../how-to/feedback-session/view-human-feedback/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/feedback-session/view-feedback-report/" class="md-nav__link">
+      <a href="../../../how-to/feedback-session/view-feedback-report/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/view-weg/view-updates-to-weg/" class="md-nav__link">
+      <a href="../../../how-to/view-weg/view-updates-to-weg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -866,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/deploy-weg-vpc/reference-weg-prior-to-execution/" class="md-nav__link">
+      <a href="../../../how-to/deploy-weg-vpc/reference-weg-prior-to-execution/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -887,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/deploy-weg-vpc/perform-crud-operations/" class="md-nav__link">
+      <a href="../../../how-to/deploy-weg-vpc/perform-crud-operations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,8 +979,6 @@
       
   
   
-    
-  
   
   
     
@@ -933,11 +990,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -951,7 +1010,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Examples
@@ -965,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prepare-for-meetings/" class="md-nav__link">
+      <a href="../../../examples/prepare-for-meetings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -986,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../trip-planner-crew/" class="md-nav__link">
+      <a href="../../../examples/trip-planner-crew/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create-instagram-post/" class="md-nav__link">
+      <a href="../../../examples/create-instagram-post/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1025,17 +1084,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../examples/stock-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1044,7 +1096,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1057,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../game-generator/" class="md-nav__link">
+      <a href="../../../examples/game-generator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drafting-emails-langgraph/" class="md-nav__link">
+      <a href="../../../examples/drafting-emails-langgraph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1099,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../landing-page-generator/" class="md-nav__link">
+      <a href="../../../examples/landing-page-generator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1169,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/what-is-fine-tuning-an-agent/" class="md-nav__link">
+      <a href="../../../faqs/what-is-fine-tuning-an-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1190,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/why-fine-tune-an-agent/" class="md-nav__link">
+      <a href="../../../faqs/why-fine-tune-an-agent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1211,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/what-is-weighted-execution-graph/" class="md-nav__link">
+      <a href="../../../faqs/what-is-weighted-execution-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1232,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/what-is-a-vpc/" class="md-nav__link">
+      <a href="../../../faqs/what-is-a-vpc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1253,7 +1304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/why-finetune-uses-it/" class="md-nav__link">
+      <a href="../../../faqs/why-finetune-uses-it/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1274,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/how-to-connect-weg-to-vpc/" class="md-nav__link">
+      <a href="../../../faqs/how-to-connect-weg-to-vpc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1295,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/which-cloud-providers-integrated/" class="md-nav__link">
+      <a href="../../../faqs/which-cloud-providers-integrated/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1316,7 +1367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/which-agents-finetune-supports/" class="md-nav__link">
+      <a href="../../../faqs/which-agents-finetune-supports/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1337,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/which-llms-finetune-supports/" class="md-nav__link">
+      <a href="../../../faqs/which-llms-finetune-supports/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1358,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faqs/how-human-feedback-represented-in-weg/" class="md-nav__link">
+      <a href="../../../faqs/how-human-feedback-represented-in-weg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1397,6 +1448,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users' structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1413,11 +1490,34 @@
   
 
 
-  <h1>Stock Analysis</h1>
+  <h1>Synthetic Users</h1>
 
-<div class="admonition example">
-<p class="admonition-title">COMING SOON</p>
-</div>
+<p style="font-size: 22px;">
+Acting like users by prompting takes ages and is not a viable longterm solution. Especially when it comes to agents. We're changing that. 
+
+Finetune allows users to create detailed synthetic users that reflect their customers. This way when you spin up a fine-tuning session, you'll be able to run your agent against these users. 
+</p>
+
+<h2 id="minimal-setup">Minimal Setup</h2>
+<p style="font-size: 22px;">
+How do we create these "users"? Well all you have to do is provide us with a link to your website's home/about page and our in-house multi agent system leveraged with fine-tuned models and relevant census data will be able to create detailed users equipped with a set of questions and a mission statement. 
+</p>
+
+<h2 id="users-structure">Users' structure</h2>
+<p style="font-size: 22px;">
+What do these users look like? Here's a simple JSON object to reflect the users: 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Luca Müller&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;Age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;Questions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="s2">&quot;What is the process for getting a ticket refunded?&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="s2">&quot;How long does it take to receive a refund?&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="s2">&quot;What documents are needed to apply for a refund?&quot;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p">],</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;MissionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;I want accurate information on how to get my ticket refunded.&quot;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">}</span>
+</code></pre></div>
+</p>
 
 
 
@@ -1503,10 +1603,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "header.autohide"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
